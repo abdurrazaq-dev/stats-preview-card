@@ -1,0 +1,112 @@
+body{
+    height: 100vh;
+    padding: 0 100px;
+    background-color:black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+.first{
+    height: 100vh;
+    padding: 0 100px;
+    background-color: #0A0C1B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;;
+}
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     width: 100%;
+    background-color: rgb(28, 25, 56);
+
+    /* max-height: 365px; */
+    max-width: 910px;
+    border-radius: 10px;
+    overflow: hidden;
+    color: white;
+    font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.text{
+    padding: 40px;
+   
+}
+.text h1+p{
+    opacity: 0.5;
+   
+}
+.two{
+    opacity: 0.5;
+   
+}
+.Stats{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top:40px;
+   
+}
+.Stats span{
+    opacity: 0.5;
+   
+}
+.Stats strong{
+    font-size:larger;
+    font-weight: bolder;
+    font-family: sans-serif;
+   
+}
+
+img{
+   height: 365px;
+   /* width: 442px; */
+   width: 100%;
+   
+}
+.screen-blue-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(124,32,154,0.2); /* Light blue tint */
+    z-index: 1000;
+    pointer-events: none; /* So it doesn't block clicks */
+  }
+  
+    
+@media (max-width:425px){
+ .first{
+    width: 100vw;
+    padding: 20px;
+    flex-direction: column;
+    
+  }
+    .main{
+   
+    flex-direction: column-reverse;
+    width: 100%;
+   }
+.Stats{
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    
+   }
+img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}
